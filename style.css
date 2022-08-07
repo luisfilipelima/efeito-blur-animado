@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(mountains-g547ef793b_1920.jpg);
+    background-size: cover;
+    background-position:  center ;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+   
+   width: 100%;
+   max-width: 500px;
+   background-color: transparent;
+   padding: 35px;
+   backdrop-filter: blur(0px);
+   border: 1px solid white;
+   border-radius: 20px;
+   overflow: hidden;
+   transition: top 0.5s;
+}
+.container .text{
+    color: white;
+    position: relative;
+    top: 200px;
+    transition:  top 0.5s;
+    
+}
+
+ .text h1{
+     text-align: center;
+     margin-bottom: 20px;
+     
+}
+
+.container:hover .text{
+    top:0;
+    
+}
+
+.container:hover{
+    backdrop-filter: blur(10px);
+}
